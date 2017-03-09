@@ -1,0 +1,9 @@
+#!/usr/bin/with-contenv bash
+
+umask 022
+
+cd /app/sonarr || exit
+
+exec \
+	s6-setuidgid media mono --debug NzbDrone.exe \
+	-nobrowser -data=/config
