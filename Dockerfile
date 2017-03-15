@@ -5,7 +5,7 @@ MAINTAINER djavanargent
 ENV XDG_DATA_HOME="/config" \
     XDG_CONFIG_HOME="/config"
 
-# Install jackett
+# Install sonarr
 RUN \
   mkdir -p /app/sonarr && \
   curl -o /build/NzbDrone.master.tar.gz -L https://update.sonarr.tv/v2/master/mono/NzbDrone.master.tar.gz && \
